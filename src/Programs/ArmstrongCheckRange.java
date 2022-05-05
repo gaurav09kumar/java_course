@@ -5,7 +5,7 @@ public class ArmstrongCheckRange {
 	     int a=k;
 	     while(a>0){
 	         i = a % 10;
-	         j = (i*i*i)+j;
+	         j = Math.pow(i, 3)+j;
 	         a = a/10;
 	     }
 	     if(j==k){
