@@ -11,7 +11,7 @@ class Employee{
         return eno + " : " +name;
     }
 }
-public class Main
+public class Demo4
 {
 	public static void main(String[] args) {
 		ArrayList<Employee> empList = new ArrayList<Employee>();
