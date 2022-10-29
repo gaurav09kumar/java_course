@@ -24,6 +24,9 @@ public class Demo4
 		
 		//we want all these employee to be stored in sorted order based on ascending order of eno
 		Collections.sort(empList,(e1,e2)->(e1.eno<e2.eno)?-1:(e1.eno>e2.eno)?1:0);
-		System.out.println(empList);
+		System.out.println("Sorted based on employee number : " + empList);
+		
+		Collections.sort(empList,(e1,e2)->e1.name.compareTo(e2.name));
+		System.out.println("Sorted alphabetically based on Employee name : " + empList);
 	}
 }
